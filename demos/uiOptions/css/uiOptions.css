@@ -199,3 +199,81 @@ main {
     border-right: 1px solid #fff;
 }
 
+/* Small screen size media queries*/
+@media only screen and (max-device-width: 480px) {
+    
+    .uioption{
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        width: 100%;
+        z-index: 1000;
+        color:blue;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* Overriding some of the default colours of Preference Editor - separated panel */
+    .prefsEditor-demo-theme .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+        background-color: #cdccca;
+    }
+    .fl-prefsEditor-separatedPanel .fl-panelBar button {
+        font-family: "Myriad Pro", Helvetica, Tahoma, Verdana, sans-serif;
+        border: 0;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    /* Scoped colours for theme swapping */
+    /*
+        Font color: #3E606F
+        Button blue: #0071BC
+     */
+    .prefsEditor-demo-theme {
+        color: #3E606F;
+        background-image: url("../images/background_texture.png");
+        background-position: left top;
+        background-repeat: repeat;
+    }
+    .prefsEditor-demo-theme a {
+        color: #3E606F;
+    }
+    .prefsEditor-demo-theme .disp-opts-button-container {
+        background-color: #cdccca;
+        background-image: url("../images/arrow_right.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .prefsEditor-demo-theme .disp-opts-button {
+        color: black;
+        background-color: #fff;
+    }
+    /* Overriding some of the default colours of Preference Editor - separated panel */
+    .prefsEditor-demo-theme .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+        background-color: #fff;
+        width:100%;
+    }
+    .fl-prefsEditor-separatedPanel .fl-panelBar button {
+        font-family: "Myriad Pro", Helvetica, Tahoma, Verdana, sans-serif;
+        border: 0;
+        border-radius: 0;
+        text-transform: lowercase;
+        font-weight: bold;
+    }
+
+    .prefsEditor-demo-theme .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+    .prefsEditor-demo-theme .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset  {
+        background-color: #fff;
+        color: black;
+    }
+    p{
+        font-size: 16px;
+    }
+    /*Hide p tags on panels*/
+    .flc-prefsEditor-text-size-descr{
+        visibility: hidden;
+    }
+}
